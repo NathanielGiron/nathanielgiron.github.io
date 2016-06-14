@@ -1,22 +1,289 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-	<title>Nathaniel Giron's Portfolio</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-	<style type="text/css">
-		body {
-			background-color: #f2f2f2;
-			color: #666;
-			font-family: 'Open Sans', sans-serif;
-		}
-		div {
-			text-align: center;
-			font-size: 30pt;
-			margin-top: 200px;
-		}
-	</style>
-</head>
-<body>
-	<div>nathanielgiron.github.io</div>
+    <title>Nathaniel Giron</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head> 
+
+<body data-spy="scroll">
+    
+    <!---//Facebook button code-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header">  
+        <div class="container">            
+            <h1 class="logo pull-left">
+                <a class="scrollto" href="#promo">
+                    <span class="logo-title">NathanielGiron</span>
+                </a>
+            </h1><!--//logo-->              
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->            
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#resume">Resume</a></li>                    
+                        <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div>
+    </header><!--//header-->
+    
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+        <div class="container text-center">
+            <h2 class="title">Nathaniel<span class="highlight">Giron</span></h2>
+            <p class="intro">I'm a full stack web developer based in Seattle.</p>
+            <div class="btns">
+                <a class="btn btn-cta-secondary scrollto" href="#portfolio">Portfolio</a>
+                <a class="btn btn-cta-primary scrollto" href="#contact">About</a>
+            </div>
+            <ul class="meta list-inline">
+                <li><a href="https://github.com/NathanielGiron" target="_blank">View on GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/nathanielgiron" target="_blank">View my Linkedin</a></li>
+                <li><a href="https://s3-us-west-2.amazonaws.com/nathanielgiron/uploads/resume-nathaniel.pdf" target="_blank">View my Resume</a></li>
+            </ul><!--//meta-->
+        </div><!--//container-->
+        <div class="social-media">
+            <div class="social-media-inner container text-center">
+                <ul class="list-inline">
+                    <li class="twitter-follow"><a href="https://twitter.com/NathanielGiron" class="twitter-follow-button" data-show-count="false">Follow @3rdwave_themes</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </li><!--//twitter-follow-->
+                    <li class="twitter-tweet">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="NathanielGiron" data-hashtags="webdev">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </li><!--//twitter-tweet-->
+                    
+                    <!--// Generate github buttons: https://github.com/mdo/github-buttons -->
+                    <li class="github-star"><iframe src="http://ghbtns.com/github-btn.html?user=NathanielGiron&repo=nathanielgiron.github.io&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe></li>
+                    <li class="github-fork"><iframe src="http://ghbtns.com/github-btn.html?user=NathanielGiron&repo=nathanielgiron.github.io&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe></li>
+                    <!--//
+                    <li class="github-follow"><iframe src="http://ghbtns.com/github-btn.html?user=mdo&type=follow&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </section><!--//promo-->
+    
+    <!-- ******PORTFOLIO****** --> 
+    <section id="portfolio" class="about section">
+        <div class="container">
+            <h2 class="title text-center">Some of my works</h2>
+            <div class="row">
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="content">
+
+                    	<img src="assets/images/portfolio-imgs/cat-defender.png" class="img-thumbnail" style="width: 300px;">
+                    	<br /><br />
+                        <h3 class="sub-title">Cat Defender</h3>
+                        <p>Phaser.js app in which the user attempts to defend a group of cats from the onslaught of space rocks raining down upon them by clicking the screen to generate a burst of explosive energy.<br><br><a href="http://nathanielgiron.github.io/cat-defender/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> View Project</a></p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="content">
+                    	<img src="assets/images/portfolio-imgs/seattle-fire.png" class="img-thumbnail" style="width: 300px;">
+                    	<br /><br />
+                        <h3 class="sub-title">Seattle Fire 911</h3>
+                        <p>Node.js app that provides a centralized location for the user to track the latest 911 dispatches. I'm unilizing Socrata’s Open Data API to access data from Seattle’s Fire department.<br><br><a href="https://seattlefire911.herokuapp.com/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> View Project</a></p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="content">
+                    	<img src="assets/images/portfolio-imgs/cs50-blog.png" class="img-thumbnail" style="width: 300px;">
+                    	<br /><br />
+                        <h3 class="sub-title">CS50 Blog</h3>
+                        <p>A simple blogging system that allows users to post and read articles that was created with Ruby on Rails. <br><br><a href="https://cs50-blog.herokuapp.com/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> View Project</a></p>
+                    </div><!--//content-->
+                </div><!--//item-->           
+                <div class="clearfix visible-md"></div>    
+                             
+            </div><!--//row-->            
+        </div><!--//container-->
+    </section><!--//about-->
+    
+    <!-- ******SKILLS****** --> 
+    <section id="skills" class="features section">
+        <div class="container text-center">
+            <h2 class="title">My Top Skills</h2>
+            <ul class="feature-list list-unstyled">
+                <li><i class="fa fa-check"></i> HTML + CSS</li>
+                <li><i class="fa fa-check"></i> Javascript</li>
+                <li><i class="fa fa-check"></i> Node/Express</li>
+                <li><i class="fa fa-check"></i> AngularJS</li>
+                <li><i class="fa fa-check"></i> MongoDB</li>
+                <li><i class="fa fa-check"></i> Ruby on Rails</li>
+                <li><i class="fa fa-check"></i> PostgreSQL</li>
+                <br />
+                <li><i class="fa fa-list-alt"></i> <strong>Some other skills up my sleeve</strong></li>
+                <li><i class="fa fa-check"></i> Git/Github</li>
+                <li><i class="fa fa-check"></i> Bootstrap</li>
+                <li><i class="fa fa-check"></i> jQuery, AJAX</li>
+                <li><i class="fa fa-check"></i> PHP + MySQL</li>
+            </ul>
+        </div><!--//container-->
+    </section><!--//features-->
+    
+    <!-- ******RESUME****** --> 
+    <section id="resume" class="docs section">
+        <div class="container">
+            <div class="docs-inner">
+            <h2 class="title text-center">Resume</h2>            
+            <div class="block">
+                <h3 class="sub-title text-center">Work Experience</h3>
+                <div class="code-block">
+                    <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
+                    <pre><code class="language-markup">
+    &lttitle&gt Full Stack Web Developer &lt/title&gt
+    &ltcompany&gt General Assembly Seattle &lt/company&gt
+    &lttime-period&gt March 2016 - June 2016 &lt/time-period&gt
+
+    &ltdescription&gt
+    A 12-week full stack web development course with 
+    480 hours of classroom instruction, 50-70 hours per week of work 
+    and 4 projects.
+
+    Skills Learned: HTML/CSS, Javascript, jQuery, PostgreSQL, MongoDB, 
+    Node/Express, Ruby on Rails, AngularJS, ReactJS, Bootstrap, APIs 
+    &lt/description&gt
+
+    &lt!------------------------&gt
+
+    &lttitle&gt Web Developer &lt/title&gt
+    &ltcompany&gt Gannett Co., Inc. &lt/company&gt
+    &lttime-period&gt December 2014 - May 2016 &lt/time-period&gt
+
+    &lt!------------------------&gt
+
+    &lttitle&gt Freelance Web Developer &lt/title&gt
+    &ltcompany&gt University of Guam &lt/company&gt
+    &lttime-period&gt November 2016 - April 2016 &lt/time-period&gt
+
+    &ltdescription&gt
+    -Maintain and develop the University’s website.
+    -Developed a web-based financial aid calculator. 
+    &lt/description&gt
+
+    &lt!------------------------&gt
+
+    &lttitle&gt IT Support &lt/title&gt
+    &ltcompany&gt Guam Home Center &lt/company&gt
+    &lttime-period&gt July 2013 - August 2014 &lt/time-period&gt
+
+    &ltdescription&gt
+    -Diagnose and resolve technical hardware and software issues.
+    -Process purchasing transactions and maintain an inventory of
+    products. 
+    &lt/description&gt
+
+                     </code></pre>
+                </div><!--//code-block-->
+            </div><!--//block-->
+  
+            <div class="block">
+                <h3 class="sub-title text-center">View Resume</h3>
+                <p class="text-center">
+                    <a class="btn btn-cta-primary" href="https://s3-us-west-2.amazonaws.com/nathanielgiron/uploads/resume-nathaniel.pdf" target="_blank">PDF Resume</a>
+                    <a class="btn btn-cta-primary" href="https://gist.github.com/NathanielGiron/fef2eccebe2e213bc7e7dc1f1f3c3fe7" target="_blank">Markdown Resume</a>
+                </p>
+            </div><!--//block-->
+            
+            </div><!--//docs-inner-->         
+        </div><!--//container-->
+    </section><!--//features-->
+    
+    <!-- ******CONTACT****** --> 
+    <section id="contact" class="contact section has-pattern">
+        <div class="container">
+            <div class="contact-inner">
+                <h2 class="title  text-center">Contact</h2>
+                <p class="intro  text-center">Feel free to get in touch if you have any questions or suggestions.</p>
+                <div class="author-message">                      
+                    <div class="profile">
+                        <img class="img-responsive img-circle" src="assets/images/profile.jpg" alt="" />
+                    </div><!--//profile-->
+                    <div class="speech-bubble">
+                        <h3 class="sub-title">About Me</h3>
+                        <p>I'm a focused and determined full stack web developer with thorough hands-on experience in database driven web applications. Supportive and enthusiastic team player dedicated to streamlining processes and efficiently resolving project issues. When I'm not building things, I enjoy exercising, playing video games, drinking good coffee, and more.</a>
+
+                        <br /><br />
+                        <p>If you'd like to follow me on Twitter, my username is <a href="http://twitter.com/NathanielGiron" target="_blank">@NathanielGiron.</a></p> 
+                        <div class="source">
+                            <span class="name"><a href="https://www.linkedin.com/in/nathanielgiron" target="_blank">Nathaniel Giron</a></span>
+                            <br />
+                            <span class="title">Full Stack Web Developer</span>
+                        </div><!--//source-->
+                    </div><!--//speech-bubble-->                        
+                </div><!--//author-message-->
+                <div class="clearfix"></div>
+                <div class="info text-center">
+                    <h4 class="sub-title">Get Connected</h4>
+                    <ul class="social-icons list-inline">
+                    		<li><a href="https://github.com/NathanielGiron" target="_blank"><i class="fa fa-github"></i></a></li>
+                    		<li><a href="https://www.linkedin.com/in/nathanielgiron" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/NathanielGiron" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li class="last"><a href="mailto:nathaniel.giron@gmail.com"><i class="fa fa-envelope"></i></a></li>              
+                    </ul>
+                </div><!--//info-->
+            </div><!--//contact-inner-->
+        </div><!--//container-->
+    </section><!--//contact-->  
+      
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+            <small class="copyright">Developed with <i class="fa fa-heart"></i> by <a href="https://www.linkedin.com/in/nathanielgiron" target="_blank">Nathaniel Giron</a></small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+     
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>   
+    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/js/main.js"></script>       
 </body>
-</html>
+</html> 
+
